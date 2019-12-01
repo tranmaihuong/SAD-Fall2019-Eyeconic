@@ -12,7 +12,7 @@ class WebsitePreferences extends MY_Controller
 
 	public function get()
 	{
-		$data = $this->Preferences->select(array('Key', 'Value'));
+		$data = $this->Preferences->select();
 		$this->status(200)->json($data);
 	}
 

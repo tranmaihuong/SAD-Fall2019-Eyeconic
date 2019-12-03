@@ -63,3 +63,7 @@ $route['test']['GET'] = 'test/get';
 $route['test']['PUT'] = 'test/put';
 $route['test']['PATCH'] = 'test/patch';
 $route['test/(:num)']['DELETE'] = 'test/delete/$1';
+
+$route['glasses'] = 'Glasses/index';
+// $1 equal to first (:any)
+$route['glasses/(:any)'] = 'Glasses/$1';
